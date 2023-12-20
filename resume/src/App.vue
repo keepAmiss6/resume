@@ -36,4 +36,10 @@
     height: 100%;
     -webkit-print-color-adjust: exact;
   }
+  p{
+    margin: 5px 0 5px 0;
+  }
+  h3{
+    margin: 10px 0 10px 0;
+  }
 </style>
