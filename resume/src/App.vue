@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <el-button  v-print="'#printResume'">打印</el-button>
+    <!--    <el-button  v-print="'#printResume'">打印</el-button>-->
+    <el-button @click="printPDF">打印</el-button>
     <resumePage id="printResume"></resumePage>
   </div>
 </template>
@@ -13,7 +14,16 @@ export default {
   name: 'App',
   components: {
     resumePage
-  }
+  },
+  methods: {
+    printPDF() {
+      this.$printJS({
+        type: 'pdf',
+        header: 'PrintJS - PDF Demo',
+        documentTitle: 'PrintJS - PDF Demo',
+      })
+    },
+  },
 }
 </script>
 

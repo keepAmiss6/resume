@@ -2,13 +2,13 @@
   <div class="content">
     <div class="top">
       <div style="width: 45px;height: 60px;background: #BE1931;position: absolute;top: 40px"></div>
-      <div style="margin-left: 50px;display: flex;justify-content: space-between;padding: 30px 20px 20px 50px">
-        <div>
+      <div style="margin-left: 50px;display: flex;;padding: 15px 20px 20px 50px">
+        <div class="name-box" >
           <p style="font-size: 24px;font-weight: 700">张燕</p>
-          <p style="font-size: 24px;font-weight: 700;margin-bottom: 10px">前端开发</p>
+          <p style="font-size: 24px;font-weight: 700;margin-bottom: 10px">web前端开发工程师</p>
         </div>
         <img src="../assets/picture/myself.jpg" alt=""
-             style="width: 125px;height:125px;border-radius:65px;">
+             style="width: 125px;height:125px;border-radius:65px;border:1px solid #E8E8E8">
         <div style="text-align: left;" class="person-infor">
           <div><i class="el-icon-user left-icon"></i><span>1995年9月</span></div>
           <div><i class="el-icon-location-information left-icon"></i><span>北京</span></div>
@@ -98,13 +98,13 @@
           <div class="flex-space"><strong>手机端</strong><strong>2020年 - 2021年</strong></div>
           <p><strong>技术选型</strong>：react、react-redux、redux-saga、react-hooks</p>
           <strong>项目成果和亮点：</strong>
-          <div class="result">
+          <div class="result" style="margin-bottom: 20px">
             <p>使用rem完美解决了不同机型的布局兼容性问题，提高了用户的整体体验。</p>
             <p>使用断点续传思路重构了大文件上传功能，并添加了安全校验。</p>
             <p>二次封装weui的page组件，解决苹果手机适配问腿</p>
             <p class="print-page">不同场景、不同数据下，动态完成复杂表格的渲染，单元格、表头合并，帮助用户更直观地了解资产情况。</p>
           </div>
-          <div class="flex-space" style="margin-top: 10px"><strong>pc端</strong><strong>2017年 - 2021年</strong></div>
+          <div class="flex-space"><strong>pc端</strong><strong>2017年 - 2021年</strong></div>
           <p><strong>技术选型</strong>：Javascript、RequireJs、JQuery</p>
           <strong>项目成果和亮点：</strong>
           <div class="result">
@@ -124,10 +124,14 @@ export default {
   name: 'resumePage',
   data() {
     return {}
+  },
+  methods(){
+
   }
 }
 </script>
 <style scoped lang="scss">
+
 .content {
   display: flex;
   flex-direction: column;
@@ -155,14 +159,29 @@ export default {
     justify-content: space-between;
   }
 
+  .name-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 40%;
+  }
   .top {
     flex-basis: 180px;
     height: 180px;
     border: 1px solid #E8E8E8;
 
     .person-infor {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+      justify-content: end;
+      margin-left: 40px;
       div {
         margin-bottom: 5px;
+        span{
+          margin-left: 5px;
+        }
       }
     }
   }
