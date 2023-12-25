@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <resumePage></resumePage>
+    <el-button  v-print="'#printResume'">打印</el-button>
+    <resumePage id="printResume"></resumePage>
   </div>
 </template>
 
 <script>
 import resumePage from './page/resume.vue'
+
 
 export default {
   name: 'App',
