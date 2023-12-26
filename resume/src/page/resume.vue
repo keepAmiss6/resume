@@ -78,7 +78,7 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project print-page">
           <div class="flex-space"><h3>项目二：项目协同重构</h3> <strong>2022年01月 - 2022年12月</strong></div>
           <p>【云协同】项目是为企业客户提供高效联动的协同建模算量解决方案，对多个项目进行管理，数据分析等工作，为客户缩短周期，提高效率，控制算量成本。该项目是一个历史项目，首页存在严重的效率问题。</p>
           <p><strong>技术选型</strong>：Vue、Jenkins</p>
@@ -91,7 +91,7 @@
           </div>
         </div>
 
-        <div class="project print-page">
+        <div class="project ">
           <div class="flex-space"><h3>项目三：Relax服务系统（pc端&手机端）</h3> <strong>2017年07月 - 2021年09月</strong></div>
           <p>Relax是一个面向政府、医疗、教育等不同企业的B端全流程处理系统，可以帮助企业进行事务处理、资产管理、人
             员管理、分析决策等</p>
@@ -102,7 +102,7 @@
             <p>使用rem完美解决了不同机型的布局兼容性问题，提高了用户的整体体验。</p>
             <p>使用断点续传思路重构了大文件上传功能，并添加了安全校验。</p>
             <p>二次封装weui的page组件，解决苹果手机适配问腿</p>
-            <p class="print-page">不同场景、不同数据下，动态完成复杂表格的渲染，单元格、表头合并，帮助用户更直观地了解资产情况。</p>
+            <p class="">不同场景、不同数据下，动态完成复杂表格的渲染，单元格、表头合并，帮助用户更直观地了解资产情况。</p>
           </div>
           <div class="flex-space"><strong>pc端</strong><strong>2017年 - 2021年</strong></div>
           <p><strong>技术选型</strong>：Javascript、RequireJs、JQuery</p>
@@ -132,9 +132,6 @@ export default {
 </script>
 <style scoped lang="scss">
   @media print {
-    .content{
-      border-right: 1px solid #E8E8E8;
-    }
   }
 .content {
   display: flex;
@@ -144,13 +141,13 @@ export default {
   width: 100%;
   overflow: auto;
   background-color: #fff;
-  box-shadow: 0 0 5px #ccc;
-  border-radius: 10px;
+  //box-shadow: 0 0 5px #ccc;
+  //border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   font-size: 14px;
   position: relative;
-  border: 1px solid #E8E8E8;
+  //border: 1px solid #E8E8E8;
 
   section {
     text-align: left;

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-        <el-button  v-print="'#printResume'">打印</el-button>
-<!--    <el-button @click="printPDF">打印</el-button>-->
+    <el-button v-print="'#printResume'">打印</el-button>
+    <!--    <el-button @click="printPDF">打印</el-button>-->
     <resumePage id="printResume"></resumePage>
   </div>
 </template>
@@ -45,6 +45,7 @@ html {
 }
 
 body {
+  margin: 0;
   width: 100%;
   height: 100%;
   -webkit-print-color-adjust: exact;
@@ -59,9 +60,12 @@ h3 {
 }
 
 @media print {
+  @page{
+    margin: 20px  0 10px 0;
+  }
   body {
     overflow-y: hidden !important;
-    height:auto !important;
+    height: auto !important;
   }
 
   ::-webkit-scrollbar {
@@ -69,7 +73,7 @@ h3 {
   }
 
   .print-page {
-    page-break-inside: auto;
+    page-break-inside: avoid;
   }
 
   p {
