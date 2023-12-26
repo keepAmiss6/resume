@@ -131,20 +131,26 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-
+  @media print {
+    .content{
+      border-right: 1px solid #E8E8E8;
+    }
+  }
 .content {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 1024px;
+  /*width: 1024px;*/
+  width: 100%;
   overflow: auto;
-  //background-color: #fff;
-  //box-shadow: 0 0 5px #ccc;
-  //border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   font-size: 14px;
   position: relative;
+  border: 1px solid #E8E8E8;
 
   section {
     text-align: left;
@@ -168,7 +174,7 @@ export default {
   .top {
     flex-basis: 180px;
     height: 180px;
-    border: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
 
     .person-infor {
       text-align: left;
