@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <el-button v-print="'#printResume'">打印</el-button>
-    <!--    <el-button @click="printPDF">打印</el-button>-->
     <resumePage id="printResume"></resumePage>
+    <el-button v-print="'#printResume'" type="primary">打印该简历</el-button>
   </div>
 </template>
 
