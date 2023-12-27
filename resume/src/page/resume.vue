@@ -3,7 +3,7 @@
     <div class="top">
       <div style="width: 45px;height: 60px;background: #BE1931;position: absolute;top: 40px"></div>
       <div style="margin-left: 50px;display: flex;;padding: 15px 20px 20px 50px">
-        <div class="name-box" >
+        <div class="name-box">
           <p style="font-size: 24px;font-weight: 700">张燕</p>
           <p style="font-size: 24px;font-weight: 700;margin-bottom: 10px">web前端开发工程师</p>
         </div>
@@ -14,6 +14,8 @@
           <div><i class="el-icon-location-information left-icon"></i><span>北京</span></div>
           <div><i class="el-icon-phone-outline left-icon"></i><span>1510108xxxx</span></div>
           <div><i class="el-icon-message left-icon"></i><span>keepamiss@163.com</span></div>
+          <div><img src="../assets/picture/github.jpg" style="width: 16px;height: 16px;border-radius: 50%"><span>https://github.com/keepAmiss6</span>
+          </div>
         </div>
       </div>
     </div>
@@ -125,14 +127,15 @@ export default {
   data() {
     return {}
   },
-  methods(){
+  methods() {
 
   }
 }
 </script>
 <style scoped lang="scss">
-  @media print {
-  }
+@media print {
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -162,12 +165,13 @@ export default {
     justify-content: space-between;
   }
 
-  .name-box{
+  .name-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-basis: 40%;
   }
+
   .top {
     flex-basis: 180px;
     height: 180px;
@@ -180,9 +184,11 @@ export default {
       font-weight: 700;
       justify-content: end;
       margin-left: 40px;
+
       div {
         margin-bottom: 5px;
-        span{
+
+        span {
           margin-left: 5px;
         }
       }
