@@ -176,7 +176,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-basis: 40%;
+    flex-basis: 35%;
   }
 
   .top {
