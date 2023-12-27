@@ -134,14 +134,17 @@ export default {
 </script>
 <style scoped lang="scss">
 @media print {
+  .content{
+    width: 100% !important;
+  };
 }
 
 .content {
   display: flex;
   flex-direction: column;
   height: 100%;
-  /*width: 1024px;*/
-  width: 100%;
+  width: 1024px;
+
   overflow: auto;
   background-color: #fff;
   //box-shadow: 0 0 5px #ccc;
