@@ -20,50 +20,86 @@
       </div>
     </div>
     <div class="bottom">
-      <div class="flex expirse">
-        <section style="flex-basis: 50%">
-          <h2>工作经历</h2>
-          <div style="text-align:left">
-            <p class="flex"><img src="../assets/picture/glodon.jpg" class="litter-img"><span>2021.12 ~ 至今</span></p>
-            <p style="margin-bottom: 10px">广联达科技股份有限公司 - 高级前端开发工程师</p>
-            <p class="flex"><img src="../assets/picture/ruijie.jpg" class="litter-img"><span>2017.07 ~ 2021.09</span>
-            </p>
-            <p>北京星网锐捷网络技术有限公司 - 前端开发工程师</p>
-          </div>
-        </section>
+      <el-card class="box-card">
+        <div slot="header" class="clearfix">
+          <p style="text-align: left">工作经历</p>
+        </div>
+        <el-table :data="tableData" :show-header="false">
+          <el-table-column
+              prop="name"
+              label="公司/学校"
+          >
+            <template slot-scope="scope">
+              <img src="../assets/picture/glodon.jpg" class="litter-img">{{ scope.row.name }}
+            </template>
+          </el-table-column>
+          <el-table-column
+              prop="postion"
+              label="岗位"
+          >
+          </el-table-column>
+          <el-table-column
+              prop="date"
+              label="时间"
+          >
+          </el-table-column>
+        </el-table>
+      </el-card>
+      <!--      <div class="">-->
+      <!--        <h2 style="text-align: left">工作经历</h2>-->
 
-        <section style="flex: 1">
-          <h2>教育经历</h2>
-          <div style="text-align:left">
-            <p class="flex"><img src="../assets/picture/gd.jpg" class="litter-img"><span>2015.09 ~ 2017.07</span></p>
-            <p style="margin-bottom: 10px">天津工业大学 - 软件工程专业</p>
-            <p class="flex"><img src="../assets/picture/td.jpg" class="litter-img"><span>2012.09 ~ 2015.07</span></p>
-            <p>天津大学 - 计算机信息管理专业</p>
-          </div>
-        </section>
+      <!--        <section style="flex-basis: 50%">-->
 
-        <section>
-          <h2>最近在学</h2>
-          <div class="flex">
-            <img src="../assets/picture/react.jpg" class="litter-img">
-            <span>react hook</span>
-          </div>
-        </section>
-      </div>
+      <!--          <div style="text-align:left">-->
+      <!--            <p class="flex"><img src="../assets/picture/glodon.jpg" class="litter-img"><span>2021.12 ~ 至今</span></p>-->
+      <!--            <p style="margin-bottom: 10px">广联达科技股份有限公司 - 高级前端开发工程师</p>-->
+      <!--            <p class="flex"><img src="../assets/picture/ruijie.jpg" class="litter-img"><span>2017.07 ~ 2021.09</span>-->
+      <!--            </p>-->
+      <!--            <p>北京星网锐捷网络技术有限公司 - 前端开发工程师</p>-->
+      <!--          </div>-->
+      <!--        </section>-->
 
-      <section>
-        <h2>专业技能</h2>
-        <p>具备扎实的javascript基础</p>
-        <p>熟练掌握html、css，有丰富的响应式布局经验</p>
-        <p>熟练掌握react，并对其原理有深入研究</p>
-        <p>熟练掌握vue2、vue3，并能完成大型项目开发</p>
-        <p>熟练使用chorme工具、devtool、charles、vConsole等工具对web端、手机端进行调试</p>
-        <p>熟练使用git，有丰富地多人协作项目管理经验</p>
-        <p>熟练使用webpack对大型项目进行打包、优化</p>
-        <p>掌握自动化部署，有接入前端项目流水线部署经验</p>
-        <p>熟练掌握selenium编写自动化用例</p>
-        <p>英语可以做到日常沟通以及阅读英文文档无障碍</p>
-      </section>
+      <!--        <section style="flex: 1">-->
+      <!--          <h2>教育经历</h2>-->
+      <!--          <div style="text-align:left">-->
+      <!--            <p class="flex"><img src="../assets/picture/gd.jpg" class="litter-img"><span>2015.09 ~ 2017.07</span></p>-->
+      <!--            <p style="margin-bottom: 10px">天津工业大学 - 软件工程专业</p>-->
+      <!--            <p class="flex"><img src="../assets/picture/td.jpg" class="litter-img"><span>2012.09 ~ 2015.07</span></p>-->
+      <!--            <p>天津大学 - 计算机信息管理专业</p>-->
+      <!--          </div>-->
+      <!--        </section>-->
+
+
+      <!--      </div>-->
+      <el-card class="box-card" style="margin-top:20px">
+        <div slot="header" class="clearfix">
+          <p style="text-align: left">专业技能</p>
+        </div>
+        <el-table :data="skill" :show-header="false">
+          <el-table-column
+              type="index"
+              width="40">
+          </el-table-column>
+          <el-table-column
+              prop="item"
+              label="岗位"
+          >
+          </el-table-column>
+        </el-table>
+      </el-card>
+      <!--      <section>-->
+      <!--        <h2>专业技能</h2>-->
+      <!--        <p>具备扎实的javascript基础</p>-->
+      <!--        <p>熟练掌握html、css，有丰富的响应式布局经验</p>-->
+      <!--        <p>熟练掌握react，并对其原理有深入研究</p>-->
+      <!--        <p>熟练掌握vue2、vue3，并能完成大型项目开发</p>-->
+      <!--        <p>熟练使用chorme工具、devtool、charles、vConsole等工具对web端、手机端进行调试</p>-->
+      <!--        <p>熟练使用git，有丰富地多人协作项目管理经验</p>-->
+      <!--        <p>熟练使用webpack对大型项目进行打包、优化</p>-->
+      <!--        <p>掌握自动化部署，有接入前端项目流水线部署经验</p>-->
+      <!--        <p>熟练掌握selenium编写自动化用例</p>-->
+      <!--        <p>英语可以做到日常沟通以及阅读英文文档无障碍</p>-->
+      <!--      </section>-->
       <section>
         <h2>项目经历</h2>
         <div class="project">
@@ -73,28 +109,33 @@
           <p><strong class="title">技术选型</strong>：Vue、Element UI、Webpack、Scss、Qiankun</p>
           <strong>项目成果和亮点：</strong>
           <div class="result">
-            <p>基于elementUi封装了81个业务组件，其中20个具备较高的复杂性，列如表单套表格组件、表格套表格组件、二开表格等。</p>
+            <p>
+              基于elementUi封装了81个业务组件，其中20个具备较高的复杂性，列如表单套表格组件、表格套表格组件、二开表格等。</p>
             <p>首屏渲染时间在wifi与4g网速下300ms以内打开，在低速网下1s以内渲染完成，lighthouse评分90。</p>
             <p>识别系统存在的业务、技术漏洞，并把漏洞点全部补齐，提高了系统的安全性和用户体验。</p>
-            <p>持续维护了通俗易懂的开发文档，使用UML加入流程图、用例图等图列，对专业术语简称进行额外说明、重要部分提供伪代码、采用由总到分的表达结构</p>
+            <p>
+              持续维护了通俗易懂的开发文档，使用UML加入流程图、用例图等图列，对专业术语简称进行额外说明、重要部分提供伪代码、采用由总到分的表达结构</p>
           </div>
         </div>
 
         <div class="project print-page">
           <div class="flex-space"><h3>项目二：项目协同重构</h3> <strong>2022年01月 - 2022年12月</strong></div>
-          <p>【云协同】项目是为企业客户提供高效联动的协同建模算量解决方案，对多个项目进行管理，数据分析等工作，为客户缩短周期，提高效率，控制算量成本。该项目是一个历史项目，首页存在严重的效率问题。</p>
+          <p>
+            【云协同】项目是为企业客户提供高效联动的协同建模算量解决方案，对多个项目进行管理，数据分析等工作，为客户缩短周期，提高效率，控制算量成本。该项目是一个历史项目，首页存在严重的效率问题。</p>
           <p><strong>技术选型</strong>：Vue、Jenkins</p>
           <strong>项目成果和亮点：</strong>
           <div class="result">
             <p>屏渲染速度得到极大提升，在4g与wifi网速下首屏展示由4s提升到500ms，3g网速下1s内打开。</p>
-            <p>基于webpack重构该项目，解决样式污染问题，实现了模块化管理，打包体积由原来的20M减小到10M，提高了开发体验，减少开发成本。</p>
+            <p>
+              基于webpack重构该项目，解决样式污染问题，实现了模块化管理，打包体积由原来的20M减小到10M，提高了开发体验，减少开发成本。</p>
             <p>为该项目加入自动化部署，部署时间由原来的10分钟减少到3s，避免了手工操作的出错情况，极大地提高了部署效率。</p>
             <p>解决git效率问题，项目拉取、提交速度由原来的5s减少到1s完成，提高开发体验。</p>
           </div>
         </div>
 
         <div class="project ">
-          <div class="flex-space"><h3>项目三：Relax服务系统（pc端&手机端）</h3> <strong>2017年07月 - 2021年09月</strong></div>
+          <div class="flex-space"><h3>项目三：Relax服务系统（pc端&手机端）</h3> <strong>2017年07月 - 2021年09月</strong>
+          </div>
           <p>Relax是一个面向政府、医疗、教育等不同企业的B端全流程处理系统，可以帮助企业进行事务处理、资产管理、人
             员管理、分析决策等</p>
           <div class="flex-space"><strong>手机端</strong><strong>2020年 - 2021年</strong></div>
@@ -112,10 +153,18 @@
           <div class="result">
             <p>用户有自定义表单的需求，实现了通过灵活的配置和可视化编辑，用户可以自定义表单字段、验证规则和布局。</p>
             <p>主导了流程引擎的自定义、流程实例管理和流程节点的处理，通过合理的设计和优化，实现了高效的管理功能。</p>
-            <p>为了满足不同交付群体对首页大厅的定制需求，设计并开发了首页可配置功能，由之前的交付前硬编码方式变为配置，可灵活搭配需要的功能模块、布局等，使交付时间提高了80%。</p>
+            <p>
+              为了满足不同交付群体对首页大厅的定制需求，设计并开发了首页可配置功能，由之前的交付前硬编码方式变为配置，可灵活搭配需要的功能模块、布局等，使交付时间提高了80%。</p>
             <p>用户有换肤的需求，设计并主导了换肤功能，提供三种常用的主题，并且为用户提供自定义修改主题的入口。</p>
             <p>使用selenium进行100%功能覆盖。</p>
           </div>
+        </div>
+      </section>
+      <section>
+        <h2>最近在学</h2>
+        <div class="flex">
+          <img src="../assets/picture/react.jpg" class="litter-img">
+          <span>react hook</span>
         </div>
       </section>
       <section>
@@ -129,7 +178,36 @@
 export default {
   name: 'resumePage',
   data() {
-    return {}
+    return {
+      tableData: [
+        {name: '广联达科技股份有限公司', postion: '高级前端开发工程师', date: '2021.12 ~ 至今'},
+        {name: '北京星网锐捷网络技术有限公司', postion: '前端开发工程师', date: '2017.07 ~ 2021.09'},
+        {name: '天津工业大学', postion: '软件工程专业', date: '2015.09 ~ 2017.07'},
+        {name: '天津大学', postion: '计算机信息管理专业', date: '2012.09 ~ 2015.07'},
+      ],
+    // <p>具备扎实的javascript基础</p>-->
+    // <p>熟练掌握html、css，有丰富的响应式布局经验</p>
+    // <p>熟练掌握react，并对其原理有深入研究</p>
+    // <p>熟练掌握vue2、vue3，并能完成大型项目开发</p>
+    // <p>熟练使用chorme工具、devtool、charles、vConsole等工具对web端、手机端进行调试</p>
+    // <p>熟练使用git，有丰富地多人协作项目管理经验</p>
+    // <p>熟练使用webpack对大型项目进行打包、优化</p>
+    // <p>掌握自动化部署，有接入前端项目流水线部署经验</p>
+    // <p>熟练掌握selenium编写自动化用例</p>
+    // <p>英语可以做到日常沟通以及阅读英文文档无障碍</p>
+      skill:[
+        {item:'具备扎实的javascript基础'},
+        {item:'熟练掌握html、css，有丰富的响应式布局经验'},
+        {item:'熟练掌握react，并对其原理有深入研究'},
+        {item:'熟练掌握vue2、vue3，并能完成大型项目开发'},
+        {item:'熟练使用chorme工具、devtool、charles、vConsole等工具对web端、手机端进行调试'},
+        {item:'熟练使用git，有丰富地多人协作项目管理经验'},
+        {item:'熟练使用webpack对大型项目进行打包、优化'},
+        {item:'掌握自动化部署，有接入前端项目流水线部署经验'},
+        {item:'熟练掌握selenium编写自动化用例'},
+        {item:'英语可以做到日常沟通以及阅读英文文档无障碍'}
+      ]
+    }
   },
   methods() {
 
@@ -138,9 +216,10 @@ export default {
 </script>
 <style scoped lang="scss">
 @media print {
-  .content{
+  .content {
     width: 100% !important;
-  };
+  }
+;
 }
 
 .content {
@@ -237,5 +316,11 @@ export default {
     background: #BE1931;
     margin-right: 5px;
   }
+
+}
+</style>
+<style lang="scss">
+.el-card.is-always-shadow {
+  box-shadow: none !important;
 }
 </style>
