@@ -118,6 +118,10 @@
           </div>
         </div>
       </section>
+      <section>
+        <h2>简历网页链接</h2>
+        <a href="https://keepamiss6.github.io/resume/" target="_blank">https://keepamiss6.github.io/resume/</a>
+      </section>
     </div>
   </div>
 </template>
