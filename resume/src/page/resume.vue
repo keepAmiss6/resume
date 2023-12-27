@@ -226,7 +226,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 1024px;
+  width: 794px;
 
   overflow: auto;
   background-color: #fff;
@@ -283,7 +283,7 @@ export default {
 
   .bottom {
     flex: 1;
-    padding: 30px 80px 0 80px;
+    padding: 30px 40px 0 40px;
 
 
     .left-icon {
