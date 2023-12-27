@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <resumePage id="printResume"></resumePage>
-    <el-button v-print="'#printResume'" type="primary">打印该简历</el-button>
+    <el-button v-print="'#printResume'" type="primary" class="print-btn">打印该简历</el-button>
   </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  //font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -37,7 +37,11 @@ export default {
   width: 100%;
   height: 100%;
 }
-
+.print-btn{
+  position: fixed;
+  left: 10px;
+  top: 10px;
+}
 html {
   height: 100%;
   width: 100%;
