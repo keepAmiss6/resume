@@ -62,7 +62,7 @@
         <p>熟练掌握selenium编写自动化用例</p>
         <p>英语可以做到日常沟通以及阅读英文文档无障碍</p>
       </section>
-      <section class="print-page">
+      <section>
         <h2>项目经历</h2>
         <div class="project">
           <div class="flex-space"><h3>项目一：施工算量企业服务</h3> <strong>2023年02月 - 至今</strong></div>
