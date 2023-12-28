@@ -84,13 +84,13 @@
       <div class="text item">
         <p>施工算量企业服务系统是通过帮助客户建立企业数字化标准和规则，建立全场景数字化工程量计算和管控的能力，
           帮助客户进行项目精细化管理，为每个项目创造工程量收益。</p>
-        <div>
+        <div class="flex-row-start">
           <span>技术选型</span>：
-          <div class="tag-block">Vue</div>
-          <div class="tag-block">Element UI</div>
-          <div class="tag-block">Webpack</div>
-          <div class="tag-block">ScssQiankun</div>
-          <div class="tag-block">Qiankun</div>
+          <div class="tag-block"><img src="../assets/tool_img/vue.jpg" class="litter-img2">Vue</div>
+          <div class="tag-block"><img src="../assets/tool_img/elementui.jpg" class="litter-img2">Element UI</div>
+          <div class="tag-block"><img src="../assets/tool_img/webpack.jpg" class="litter-img2">Webpack</div>
+          <div class="tag-block"><img src="../assets/tool_img/scss.jpg" class="litter-img2">Scss</div>
+          <div class="tag-block"><img src="../assets/tool_img/qiankun.png" class="litter-img2">Qiankun</div>
         </div>
         <p>项目成果和亮点</p>
         <div class="result">
@@ -111,8 +111,11 @@
       <div class="text item">
         <p>
           【云协同】项目是为企业客户提供高效联动的协同建模算量解决方案，对多个项目进行管理，数据分析等工作，为客户缩短周期，提高效率，控制算量成本。该项目是一个历史项目，首页存在严重的效率问题。</p>
-        <p><span>技术选型</span>：<span class="tag-block">Vue</span><span class="tag-block">Jenkins</span><span
-            class="tag-block">git</span></p>
+        <div><span>技术选型</span>：
+          <div class="tag-block"><img src="../assets/tool_img/vue.jpg" class="litter-img2">Vue</div>
+          <div class="tag-block"><img src="../assets/tool_img/jenkins.jpg" class="litter-img2">Jenkins</div>
+          <div class="tag-block"><img src="../assets/tool_img/git.jpg" class="litter-img2">git</div>
+        </div>
         <p>项目成果和亮点</p>
         <div class="result">
           <p>屏渲染速度得到极大提升，在4g与wifi网速下首屏展示由4s提升到<span class="tag-block-import">500ms</span>，3g网速下1s内打开。</p>
@@ -132,9 +135,14 @@
       <div class="text item">
         <p>Relax是一个面向政府、医疗、教育等不同企业的B端全流程处理系统，可以帮助企业进行事务处理、资产管理、人
           员管理、分析决策等</p>
-        <div class="flex-row-space"><span>手机端</span><span>2020年 - 2021年</span></div>
-        <p><span>技术选型</span>：<span class="tag-block">react</span><span class="tag-block">react-redux</span><span
-            class="tag-block">redux-saga</span><span class="tag-block">react-hooks</span></p>
+        <div class="flex-row-space"><p>手机端</p><span>2020年 - 2021年</span></div>
+        <div class="flex-row-start">
+          <span>技术选型</span>：
+          <div class="tag-block"><img src="../assets/picture/react.jpg" class="litter-img2">react</div>
+          <div class="tag-block">react-redux</div>
+          <div class="tag-block">redux-saga</div>
+          <div class="tag-block">react-hooks</div>
+        </div>
         <p>项目成果和亮点</p>
         <div class="result" style="margin-bottom: 20px">
           <p>使用rem完美解决了不同机型的布局兼容性问题，提高了用户的整体体验。</p>
@@ -142,9 +150,12 @@
           <p>二次封装weui的page组件，解决苹果<span class="tag-block-import">手机适配</span>问腿</p>
           <p class="">不同场景、不同数据下，动态完成复杂表格的渲染，单元格、表头合并，帮助用户更直观地了解资产情况。</p>
         </div>
-        <div class="flex-row-space"><span>pc端</span><span>2017年 - 2021年</span></div>
-        <p><span>技术选型</span>：<span class="tag-block">Javascript</span><span class="tag-block">RequireJs</span><span
-            class="tag-block">JQuery</span></p>
+        <div class="flex-row-space"><p>pc端</p><span>2017年 - 2021年</span></div>
+        <div class="flex-row-start">
+          <span>技术选型</span>：
+          <div class="tag-block"><img src="../assets/tool_img/js.png" class="litter-img2">Javascript</div>
+          <span class="tag-block"><img src="../assets/tool_img/requirejs.jpg" class="litter-img2">RequireJs</span>
+          <span class="tag-block"><img src="../assets/tool_img/jq.jpg" class="litter-img2">JQuery</span></div>
         <p>项目成果和亮点</p>
         <div class="result">
           <p>用户有自定义表单的需求，实现了通过灵活的配置和可视化编辑，用户可以自定义表单字段、验证规则和布局。</p>
@@ -214,6 +225,13 @@
     height: 20px;
     border-radius: 10px;
     margin-right: 10px;
+  }
+
+  .litter-img2 {
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    margin-right: 5px;
   }
 
   .content {
@@ -296,10 +314,12 @@
     border: 1px solid #EAEAEAEA;
     padding: 0 7px 0 7px;
     border-radius: 16px;
-    display: inline-block;
+    display: inline-flex;
     margin-right: 5px;
     height: 20px;
     line-height: 20px;
+    justify-content: center;
+    align-items: center;
   }
 
   .tag-block-import {
@@ -322,6 +342,7 @@
   .el-card {
     margin: 20px;
     text-align: left;
+    border:1px solid #ebeef5 !important;
   }
 
   .el-card:hover {
