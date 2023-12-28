@@ -68,18 +68,23 @@ h3 {
 
 @media print {
   @page{
-    margin: 20px  0 10px 0;
+    size: A4;
+    margin-top: 10px;
   }
   body {
     overflow-y: hidden !important;
     height: auto !important;
+    font-size: 14px;
+    a{
+      font-size: 14px;
+    }
   }
 
   ::-webkit-scrollbar {
     display: none;
   }
 
-  .print-page {
+  .print-break-avoid {
     page-break-inside: avoid;
   }
 
