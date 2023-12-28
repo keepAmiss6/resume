@@ -29,8 +29,7 @@ export default {
 
 <style>
 #app {
-  /*font-family: SimHei,Avenir, Helvetica, Arial, sans-serif;*/
-  font-family: SimHei,Helvetica, Arial, sans-serif;
+  font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif,SimHei,SimSun;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
