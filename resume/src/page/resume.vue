@@ -2,23 +2,29 @@
   <div class="content">
     <el-card class="box-card" style="margin-bottom: 20px">
       <div slot="header" class="clearfix">
-        <div style="padding: 20px;display: flex;">
-          <img src="../assets/picture/myself.jpg" alt=""
-               style="width: 40px;height:40px;border-radius:65px;border:1px solid #E8E8E8">
-          <p style="">张燕 | web前端开发工程师</p>
+        <div style="display: flex;width: 100%">
+          <img src="../assets/picture/myself.jpg" alt="" class="infor-img">
+          <div class="flex-column" style="margin-left: 20px;width: 100%">
+            <p style="">张燕 | web前端开发工程师</p>
+            <div class="infor">
+              <div><i class="el-icon-user icon"></i><span>1995年9月</span></div>
+              <div><i class="el-icon-location-information icon"></i><span>北京</span></div>
+            </div>
+          </div>
+
         </div>
       </div>
-      <div class="text item">
-
-        <div style="text-align: left">
-          <div><i class="el-icon-user left-icon"></i><span>1995年9月</span></div>
-          <div><i class="el-icon-location-information left-icon"></i><span>北京</span></div>
-          <div><i class="el-icon-phone-outline left-icon"></i><span>1510108xxxx</span></div>
-          <div><i class="el-icon-message left-icon"></i><span>keepamiss@163.com</span></div>
-          <div><img src="../assets/picture/github.jpg" style="width: 16px;height: 16px;border-radius: 50%"><span>https://github.com/keepAmiss6</span>
+      <div class="text item flex-column" style="text-align: left">
+        <div class="flex-row-space">
+          <div><i class="el-icon-phone-outline icon"></i><span>1510108xxxx</span></div>
+          <div><i class="el-icon-message icon"></i><span>keepamiss@163.com</span></div>
+          <div>
+            <img src="../assets/picture/github.jpg" style="width: 16px;height: 16px;border-radius: 50%;margin-right: 8px;"><span>https://github.com/keepAmiss6</span>
           </div>
         </div>
-
+        <div>
+          <a href="https://keepamiss6.github.io/resume/" target="_blank"><i class="el-icon-link icon"></i><span>网页版简历地址：https://keepamiss6.github.io/resume/</span></a>
+        </div>
       </div>
     </el-card>
     <div class="bottom">
@@ -181,11 +187,11 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+$grayColor: #afb8c1;
 @media print {
   .content {
     width: 100% !important;
   }
-;
 }
 
 .litter-img {
@@ -201,15 +207,47 @@ export default {
   margin-left: auto;
   margin-right: auto;
 
-    .result p::before {
-      content: "";
-      display: inline-block;
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: #BE1931;
-      margin-right: 5px;
-    }
+  .infor-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 65px;
+    border: 1px solid $grayColor
+  }
+
+  .infor {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .result p::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #BE1931;
+    margin-right: 5px;
+  }
+  .icon{
+    margin-right: 8px;
+  }
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-row-space {
+  display: flex;
+  justify-content: space-between;
 }
 
 //.content {
@@ -282,7 +320,7 @@ export default {
 //    //padding:20px;
 //
 //
-//    .left-icon {
+//    .icon {
 //      margin-right: 10px;
 //    }
 //
