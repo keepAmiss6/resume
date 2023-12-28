@@ -32,12 +32,13 @@
     </el-card>
     <el-card class="box-card">
       <div slot="header" class="clearfix">
-        <p style="text-align: left" class="title">工作经历</p>
+        <span class="title">工作经历</span>
       </div>
       <el-table :data="tableData" :show-header="false">
         <el-table-column
             prop="name"
             label="公司/学校"
+            width="280px"
         >
           <template slot-scope="scope">
             <img :src="require(`../assets/picture/${scope.row.img}.jpg`)"
@@ -58,7 +59,7 @@
     </el-card>
     <el-card class="box-card">
       <div slot="header" class="clearfix">
-        <p style="text-align: left" class="title">专业技能</p>
+        <span class="title">专业技能</span>
       </div>
       <el-table :data="skill" :show-header="false" class="skill-table">
         <el-table-column
@@ -74,7 +75,7 @@
         </el-table-column>
       </el-table>
     </el-card>
-    <h2>项目经历</h2>
+    <h2 style="margin-left: 20px;">项目经历</h2>
     <el-card class="box-card project">
       <div slot="header" class="clearfix">
         <span class="title">项目一：施工算量企业服务</span>
@@ -110,7 +111,8 @@
       <div class="text item">
         <p>
           【云协同】项目是为企业客户提供高效联动的协同建模算量解决方案，对多个项目进行管理，数据分析等工作，为客户缩短周期，提高效率，控制算量成本。该项目是一个历史项目，首页存在严重的效率问题。</p>
-        <p><span>技术选型</span>：<span class="tag-block">Vue</span><span class="tag-block">Jenkins</span><span class="tag-block">git</span></p>
+        <p><span>技术选型</span>：<span class="tag-block">Vue</span><span class="tag-block">Jenkins</span><span
+            class="tag-block">git</span></p>
         <p>项目成果和亮点</p>
         <div class="result">
           <p>屏渲染速度得到极大提升，在4g与wifi网速下首屏展示由4s提升到<span class="tag-block-import">500ms</span>，3g网速下1s内打开。</p>
@@ -141,7 +143,8 @@
           <p class="">不同场景、不同数据下，动态完成复杂表格的渲染，单元格、表头合并，帮助用户更直观地了解资产情况。</p>
         </div>
         <div class="flex-row-space"><span>pc端</span><span>2017年 - 2021年</span></div>
-        <p><span>技术选型</span>：<span class="tag-block">Javascript</span><span class="tag-block">RequireJs</span><span class="tag-block">JQuery</span></p>
+        <p><span>技术选型</span>：<span class="tag-block">Javascript</span><span class="tag-block">RequireJs</span><span
+            class="tag-block">JQuery</span></p>
         <p>项目成果和亮点</p>
         <div class="result">
           <p>用户有自定义表单的需求，实现了通过灵活的配置和可视化编辑，用户可以自定义表单字段、验证规则和布局。</p>
@@ -220,6 +223,11 @@
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+
+    p {
+      margin: 10px 0 10px 0;
+      line-height: 23px;
+    }
 
     .title {
       font-weight: 700;
@@ -312,18 +320,17 @@
   }
 
   .el-card {
-    margin-bottom: 20px;
+    margin: 20px;
     text-align: left;
-    border-color: $grayColor !important;
   }
 
   .el-card:hover {
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1) !important;
   }
 
-  .el-card__header {
+  /*.el-card__header {
     border-bottom: 1px solid $grayColor !important;
-  }
+  }*/
 
   .el-table .cell {
     display: flex !important;
