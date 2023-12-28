@@ -140,7 +140,7 @@
           <p class="">不同场景、不同数据下，动态完成复杂表格的渲染，单元格、表头合并，帮助用户更直观地了解资产情况。</p>
         </div>
         <div class="flex-row-space"><span>pc端</span><span>2017年 - 2021年</span></div>
-        <p><span>技术选型</span>：Javascript、RequireJs、JQuery</p>
+        <p><span>技术选型</span>：<span class="tag-block">Javascript</span><span class="tag-block">RequireJs</span><span class="tag-block">JQuery</span></p>
         <p>项目成果和亮点</p>
         <div class="result">
           <p>用户有自定义表单的需求，实现了通过灵活的配置和可视化编辑，用户可以自定义表单字段、验证规则和布局。</p>
@@ -327,6 +327,10 @@
   .el-table .cell {
     display: flex !important;
     color: #303133;
+  }
+
+  .el-table__cell {
+    padding: 8px 0 !important;
   }
 
   .skill-table {
