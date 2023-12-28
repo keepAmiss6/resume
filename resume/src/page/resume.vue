@@ -94,7 +94,7 @@
         </div>
         <p>项目成果和亮点</p>
         <div class="result">
-          <p>基于elementUi封装了<span class="tag-block-import">81个</span>业务组件，其中20个具备较高的复杂性，列如表单套表格、表格套表格、二开表格等。</p>
+          <p>基于elementUi封装了<span class="tag-block-import">81个</span>业务组件，其中20个具备较高复杂性，列如表单套表格、表格套表格、二开表格等。</p>
           <p>首屏渲染时间在wifi与4g网速下<span class="tag-block-import">300ms</span>以内打开，在低速网下1s以内渲染完成，lighthouse评分<span
               class="tag-block-import">90</span>。</p>
           <p>识别系统存在的业务、技术漏洞，并把漏洞点全部补齐，提高了系统的安全性和用户体验。</p>
@@ -122,7 +122,7 @@
           <p>
             基于webpack重构该项目，解决样式污染问题，实现了模块化管理，打包体积由原来的20M减小到<span class="tag-block-import">10M</span>。</p>
           <p>
-            为该项目加入自动化部署，部署时间由原来的10分钟减少到<span class="tag-block-import">3s</span>，避免手工操作的出错情况，极大地提高了部署效率。</p>
+            为该项目加入自动化部署，部署时间由原来的10分钟减少到<span class="tag-block-import">3s</span>，避免手工操作错误，极大提高了部署效率。</p>
           <p>解决git效率问题，项目拉取、提交速度由原来的5s减少到<span class="tag-block-import">1s</span>完成，提高开发体验。</p>
         </div>
       </div>
@@ -325,7 +325,7 @@
   .tag-block-import {
     color: #EA3331;
     background: rgba(234, 51, 49, 0.1);
-    padding: 0 7px 0 7px;
+    padding: 0 6px 0 6px;
     border-radius: 4px;
     display: inline-block;
     height: 20px;
@@ -342,7 +342,11 @@
   .el-card {
     margin: 20px;
     text-align: left;
-    border:1px solid #ebeef5 !important;
+    border: 1px solid #ebeef5 !important;
+  }
+
+  .el-card__body, .el-main {
+    padding-top: 10px !important;
   }
 
   .el-card:hover {
