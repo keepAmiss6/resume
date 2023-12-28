@@ -29,13 +29,15 @@ export default {
 
 <style>
 #app {
-  //font-family: Avenir, Helvetica, Arial, sans-serif;
+  /*font-family: SimHei,Avenir, Helvetica, Arial, sans-serif;*/
+  font-family: SimHei,Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #303133;
   width: 100%;
   height: 100%;
+  font-size: 14px;
 }
 .print-btn{
   position: fixed;
@@ -52,10 +54,12 @@ body {
   width: 100%;
   height: 100%;
   -webkit-print-color-adjust: exact;
+  color: #303133;
 }
 
 p {
-  margin: 5px 0 5px 0;
+  margin: 10px 0 10px 0;
+  line-height: 23px;
 }
 
 h3 {
