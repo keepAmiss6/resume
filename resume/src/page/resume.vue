@@ -86,9 +86,10 @@
         <div>
           <span>技术选型</span>：
           <div class="tag-block">Vue</div>
-          <div class="tag-block"> Element UI</div>
+          <div class="tag-block">Element UI</div>
           <div class="tag-block">Webpack</div>
-          <div class="tag-block">Scss、Qiankun</div>
+          <div class="tag-block">ScssQiankun</div>
+          <div class="tag-block">Qiankun</div>
         </div>
         <p>项目成果和亮点</p>
         <div class="result">
@@ -109,7 +110,7 @@
       <div class="text item">
         <p>
           【云协同】项目是为企业客户提供高效联动的协同建模算量解决方案，对多个项目进行管理，数据分析等工作，为客户缩短周期，提高效率，控制算量成本。该项目是一个历史项目，首页存在严重的效率问题。</p>
-        <p><span>技术选型</span>：<span class="tag-block">Vue</span><span class="tag-block">Jenkins</span></p>
+        <p><span>技术选型</span>：<span class="tag-block">Vue</span><span class="tag-block">Jenkins</span><span class="tag-block">git</span></p>
         <p>项目成果和亮点</p>
         <div class="result">
           <p>屏渲染速度得到极大提升，在4g与wifi网速下首屏展示由4s提升到<span class="tag-block-import">500ms</span>，3g网速下1s内打开。</p>
