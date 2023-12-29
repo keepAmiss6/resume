@@ -20,7 +20,7 @@
         <div class="flex-row-space" style="margin-bottom:8px">
           <div><i class="el-icon-phone-outline icon"></i><span>15101089180</span></div>
           <div><i class="el-icon-message icon"></i><span>keepamiss@163.com</span></div>
-          <div>
+          <div class="flex-row-start">
             <img src="../assets/picture/github.jpg"
                  style="width: 16px;height: 16px;border-radius: 50%;margin-right: 8px;"><span>https://github.com/keepAmiss6</span>
           </div>
