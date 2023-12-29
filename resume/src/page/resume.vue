@@ -8,14 +8,16 @@
             <p style="">张燕 | web前端开发工程师</p>
             <div class="infor">
               <div><i class="el-icon-user icon"></i><span>1995年9月</span></div>
-              <div><i class="el-icon-location-information icon"></i><span>北京</span></div>
+              <div class="flex-row-start"><img src="../assets/picture/academic.svg" style="width:16px;height: 16px;margin-right: 8px"><span>本科</span></div>
+              <div><i class="el-icon-postcard icon"></i><span>软件工程</span></div>
+              <div><i class="el-icon-location-information icon"></i><span>北京 or 远程</span></div>
             </div>
           </div>
 
         </div>
       </div>
       <div class="text item flex-column" style="text-align: left">
-        <div class="flex-row-space" style="margin-bottom:5px">
+        <div class="flex-row-space" style="margin-bottom:8px">
           <div><i class="el-icon-phone-outline icon"></i><span>15101089180</span></div>
           <div><i class="el-icon-message icon"></i><span>keepamiss@163.com</span></div>
           <div>
@@ -32,9 +34,9 @@
     </el-card>
     <el-card class="box-card">
       <div slot="header" class="clearfix">
-        <span class="title">工作经历</span>
+        <span class="title">教育/工作经历</span>
       </div>
-      <el-table :data="tableData" :show-header="false">
+      <el-table :data="tableData" :show-header="false" class="work-exprise">
         <el-table-column
             prop="name"
             label="公司/学校"
@@ -112,7 +114,8 @@
       <div class="text item">
         <p>
           【云协同】项目是为企业客户提供高效联动的协同建模算量解决方案，对多个项目进行管理，数据分析等工作，为客户缩短周期，提高效率，控制算量成本。该项目是一个历史项目，首页存在严重的效率问题。</p>
-        <div><span>技术选型</span>：
+        <div class="flex-row-start">
+          <span>技术选型</span>：
           <div class="tag-block"><img src="../assets/tool_img/vue.jpg" class="litter-img2">Vue</div>
           <div class="tag-block"><img src="../assets/tool_img/jenkins.jpg" class="litter-img2">Jenkins</div>
           <div class="tag-block"><img src="../assets/tool_img/git.jpg" class="litter-img2">git</div>
@@ -235,8 +238,8 @@ $grayColor: #afb8c1;
 }
 
 .litter-img2 {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   border-radius: 10px;
   margin-right: 5px;
 }
@@ -286,8 +289,9 @@ $grayColor: #afb8c1;
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background: $grayColor;
+    background:#303133;
     margin-right: 5px;
+    margin-bottom: 2px;
   }
 
   .icon {
@@ -319,7 +323,7 @@ $grayColor: #afb8c1;
 
 .tag-block {
   border: 1px solid #EAEAEAEA;
-  padding: 0 7px 0 7px;
+  padding: 2px 7px 2px 7px;
   border-radius: 16px;
   display: inline-flex;
   margin-right: 5px;
@@ -332,7 +336,8 @@ $grayColor: #afb8c1;
 .tag-block-import {
   color: #EA3331;
   background: rgba(234, 51, 49, 0.1);
-  padding: 0 6px 0 6px;
+  padding: 1px 4px 1px 4px;
+  margin:0 2px 0 2px;
   border-radius: 4px;
   display: inline-block;
   height: 20px;
@@ -360,10 +365,6 @@ $grayColor: #afb8c1;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1) !important;
 }
 
-/*.el-card__header {
-  border-bottom: 1px solid $grayColor !important;
-}*/
-
 .el-table .cell {
   display: flex !important;
   color: #303133;
@@ -387,4 +388,11 @@ $grayColor: #afb8c1;
 
   }
 }
+
+  .work-exprise{
+    .cell{
+      display: flex !important;
+      align-items: center;
+    }
+  }
 </style>
